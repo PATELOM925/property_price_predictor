@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, royalblue, black);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 250px;
+    margin-left: 28.5%;
+    width: 40%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.111);
+    text-align: center;
+}
+
+h1 {
+    color: royalblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.footer {
+
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}

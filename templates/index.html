@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Price Predictor</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Property Price Predictor</h1>
+        <form id="prediction-form">
+            <label for="area">Area (sq ft):</label>
+            <input type="number" id="area" name="area" placeholder="Enter area in sq ft" required>
+            
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                {% for location in locations %}
+                    <option value="{{ location }}">{{ location }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" placeholder="Enter number of bedrooms" required>
+
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" placeholder="Enter number of bathrooms" required>
+
+            <label for="years_ahead">Years Ahead:</label>
+            <input type="number" id="years_ahead" name="years_ahead" placeholder="Enter years ahead" required>
+
+            <button type="button" id="predict-button">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+        
+    <br>
+    <br>
+    <div class="footer">
+        <h4> Predict Price | Copyright @2025 | Contact <a href="patel.html">Contact</a></h4>
+    </div>
+   <br>
+   <br>
+
+</body>
+</html>
