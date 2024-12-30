@@ -9,7 +9,7 @@ This is a Flask-based web application for predicting property prices of Vadodara
 ## Features
 
 - Predict property prices for Vadodara City.
-- Future price estimation based on years ahead.
+- Future price estimation is based on the years ahead.
 
 ## Technology Stack
 
