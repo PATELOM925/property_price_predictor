@@ -66,4 +66,5 @@ The application is deployed on Render.com. Access it at [Property Price Predicto
 5. Create a pull request.
 
 ## Contact
-Developed by [@SnehSolanki](https://github.com/snehsolanki1583)
+Developed by [@SnehSolanki](https://github.com/snehsolanki1583) <br>
+Co-Developef by [@OmPatel](https://github.com/patelom925)
