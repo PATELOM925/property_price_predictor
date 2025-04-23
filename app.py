@@ -9,7 +9,7 @@ scaler = joblib.load('models/scaler.pkl')
 label_encoders = joblib.load('models/label_encoders.pkl')
 rf_model = joblib.load('models/rf_model.pkl')
 
-@app.route('/')
+@app.route('/') 
 def index():
     locations = list(label_encoders['Location'].classes_)
     return render_template('index.html', locations=locations)
@@ -17,7 +17,7 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
-    area = float(data['area'])
+    area = float(data['area']) 
     bedrooms = int(data['bedrooms'])
     bathrooms = int(data['bathrooms'])
     location = data['location']
