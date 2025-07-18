@@ -30,12 +30,12 @@ def predict():
 
     # Predict the price
     current_price = rf_model.predict(input_data_scaled)[0]
-    appreciation_rate = 0.07
+    appreciation_rate = 0.067
     future_price = current_price * ((1 + appreciation_rate) ** years_ahead)
 
     return jsonify({
-        'current_price': f"₹{current_price:,.2f}",
-        'future_price': f"₹{future_price:,.2f}"
+        'current_price': f"₹{current_price:,.3f}",
+        'future_price': f"₹{future_price:,.3f}"
     })
 
 if __name__ == '__main__':
